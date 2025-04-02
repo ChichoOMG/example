@@ -1,4 +1,4 @@
-mconsole.log('Hello world!');
+console.log('Hello world!');
 
 
 self.addEventListener('install', event => {
@@ -21,7 +21,7 @@ self.addEventListener('install', event => {
 });
 
 
-console.log('example');
+console.log('example2');
 
 self.addEventListener('fetch', event => {
   event.respondWith(
