@@ -1,19 +1,19 @@
-console.log('Hello world!');
+mconsole.log('Hello world!');
 
 
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open('pwa-cache').then(cache => {
       return cache.addAll([
-        '/',                          // Página principal
-        '/index.html',                // HTML
-        '/favicon.ico',               // Favicon
-        '/manifest.json',             // Manifest
-        '/assets/favicon.ico',   // Ícono 192x192
-        '/assets/icon-512x512.png',   // Ícono 512x512
-        '/assets/main.js',            // Archivo JS compilado
-        '/assets/vendor.js',          // Otros archivos JS compilados
-        '/assets/app.css',            // CSS generado
+        '',                          // Página principal
+        '/example/index.html',                // HTML
+        '/example/favicon.ico',               // Favicon
+        '/example/manifest.json',             // Manifest
+        '/example/assets/favicon.ico',   // Ícono 192x192
+        '/example/assets/icon-512x512.png',   // Ícono 512x512
+        '/example/assets/main.js',            // Archivo JS compilado
+        '/example/assets/vendor.js',          // Otros archivos JS compilados
+        '/example/assets/app.css',            // CSS generado
         // Agrega más archivos estáticos si es necesario
       ]);
     })
